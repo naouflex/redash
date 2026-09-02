@@ -82,10 +82,6 @@ services:
   # client host's public IPv4 must be in that instance's Authorized Networks. To
   # run a local Postgres instead, restore a `postgres` service here and set
   # REWATCH_DATABASE_URL=postgresql://rewatch:rewatch@postgres:5432/rewatch.
-  # The landing site + in-app help center is now its own Docker stack so it
-  # can be deployed on a separate VM. See ../landing/ for the project, and
-  # build the frontend with REWATCH_HELP_BASE_URL=https://<landing-host>
-  # (consumed by client/app/components/HelpTrigger.jsx) so the question-mark
-  # icon in the sidebar opens that host instead of localhost:5002.
+  # Product help lives in this app at /help (see client/app/pages/help/).
 volumes:
   redis_data:

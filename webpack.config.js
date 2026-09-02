@@ -138,6 +138,7 @@ const config = {
         { from: "client/app/unsupportedRedirect.js" },
         { from: "client/app/assets/css/*.css", to: "styles/[name][ext]" },
         { from: "client/app/assets/fonts", to: "fonts/" },
+        { from: "client/app/pages/help/content", to: "help/" },
         {
           from: "client/app/service-worker.js",
           transform(content) {
@@ -161,13 +162,6 @@ const config = {
       // because the `util` package expects there to be a global variable named `process`.
       // Thanks to https://stackoverflow.com/a/65018686/14239942
       process: 'process/browser'
-    }),
-    // Expose a small allowlist of REWATCH_* env vars to the frontend bundle.
-    // Defaults make sense for the dev compose stack:
-    //   - REWATCH_HELP_BASE_URL: where the in-app help drawer loads pages from
-    //     (see client/app/components/HelpTrigger.jsx and ./landing/).
-    new webpack.EnvironmentPlugin({
-      REWATCH_HELP_BASE_URL: process.env.REWATCH_HELP_BASE_URL || "https://naoufel.io",
     })
   ].filter(Boolean),
   optimization: {

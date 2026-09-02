@@ -21,6 +21,6 @@
 <!-- If Manually, please describe. -->
 
 ## Related Tickets & Documents
-<!-- If applicable, please include a link to your documentation PR against getrewatch/website -->
+<!-- If you changed product docs, update client/app/pages/help/content/ in this PR. -->
 
 ## Mobile & Desktop Screenshots/Recordings (if there are UI changes)

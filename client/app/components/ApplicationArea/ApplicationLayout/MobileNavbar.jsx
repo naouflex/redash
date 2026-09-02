@@ -5,7 +5,6 @@ import Drawer from "antd/lib/drawer";
 import MenuOutlinedIcon from "@ant-design/icons/MenuOutlined";
 import Menu from "antd/lib/menu";
 import Link from "@/components/Link";
-import HelpTrigger from "@/components/HelpTrigger";
 import ThemeToggle from "@/components/ThemeToggle";
 import { Auth, clientConfig, currentUser } from "@/services/auth";
 import settingsMenu from "@/services/settingsMenu";
@@ -93,15 +92,7 @@ export default function MobileNavbar() {
 
     const accountChildren = [
       linkItem("profile", "users/me", "Profile"),
-      {
-        key: "help",
-        className: "mobile-navbar-help-item",
-        label: (
-          <HelpTrigger showTooltip={false} type="HOME" tabIndex={0}>
-            Help
-          </HelpTrigger>
-        ),
-      },
+      linkItem("help", "help", "Help"),
       ...(firstSettingsTab
         ? [
             {

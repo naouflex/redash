@@ -60,7 +60,7 @@ SECRET_KEY = os.environ.get("REWATCH_COOKIE_SECRET")
 
 if SECRET_KEY is None:
     raise Exception(
-        "You must set the REWATCH_COOKIE_SECRET environment variable. Visit http://naoufel.io/help/open-source/admin-guide/secrets for more information."
+        "You must set the REWATCH_COOKIE_SECRET environment variable. See /help/open-source/setup for more information."
     )
 
 # The secret key to use when encrypting data source options
@@ -127,7 +127,7 @@ CONTENT_SECURITY_POLICY = os.environ.get(
     "worker-src 'self'; "
     "object-src 'none'; "
     "frame-ancestors 'none'; "
-    "frame-src naoufel.io;",
+    "frame-src 'self';",
 )
 CONTENT_SECURITY_POLICY_REPORT_URI = os.environ.get("REWATCH_CONTENT_SECURITY_POLICY_REPORT_URI", "")
 CONTENT_SECURITY_POLICY_REPORT_ONLY = parse_boolean(
@@ -327,7 +327,6 @@ ASSISTANT_MAX_LLM_MESSAGES = int(os.environ.get("REWATCH_ASSISTANT_MAX_LLM_MESSA
 ASSISTANT_MAX_LLM_CHARS = int(os.environ.get("REWATCH_ASSISTANT_MAX_LLM_CHARS", "120000"))
 ASSISTANT_INCLUDE_SKILL_GUIDES = parse_boolean(os.environ.get("REWATCH_ASSISTANT_INCLUDE_SKILL_GUIDES", "true"))
 ASSISTANT_SKILL_GUIDES_MAX_CHARS = int(os.environ.get("REWATCH_ASSISTANT_SKILL_GUIDES_MAX_CHARS", "32000"))
-HELP_BASE_URL = os.environ.get("REWATCH_HELP_BASE_URL", "https://naoufel.io")
 
 SEND_FAILURE_EMAIL_INTERVAL = int(os.environ.get("REWATCH_SEND_FAILURE_EMAIL_INTERVAL", 60))
 MAX_FAILURE_REPORTS_PER_QUERY = int(os.environ.get("REWATCH_MAX_FAILURE_REPORTS_PER_QUERY", 100))

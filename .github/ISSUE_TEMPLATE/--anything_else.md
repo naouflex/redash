@@ -14,4 +14,4 @@ Anything else should be a discussion: https://github.com/naouflex/rewatch/discus
 Alternatively, check out these resources below. Thanks! 😁.
 
 - [Discussions](https://github.com/naouflex/rewatch/discussions/)
-- [Knowledge Base](https://naoufel.io/help)
+- In-app Help (`/help`)

@@ -1,0 +1,12 @@
+[
+  { "id": "intro",          "title": "Getting Started",       "order": 1 },
+  { "id": "queries",        "title": "Queries",               "order": 2 },
+  { "id": "dashboards",     "title": "Dashboards",            "order": 3 },
+  { "id": "visualizations", "title": "Visualizations",        "order": 4 },
+  { "id": "alerts",         "title": "Alerts",                "order": 5 },
+  { "id": "ml",             "title": "Machine Learning",      "order": 6 },
+  { "id": "users",          "title": "Users & Auth",          "order": 7 },
+  { "id": "data-sources",   "title": "Data Sources",          "order": 8 },
+  { "id": "cheat-sheets",   "title": "Cheat Sheets",          "order": 9 },
+  { "id": "admin",          "title": "Self-hosting & Admin",  "order": 10 }
+]

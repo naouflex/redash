@@ -26,6 +26,8 @@ import "./community/CommunityPost";
 
 import "./api-docs/ApiDocsPage";
 
+import "./help/HelpPage";
+
 import "./dashboards/DashboardList";
 import "./dashboards/DashboardPage";
 import "./dashboards/PublicDashboardPage";

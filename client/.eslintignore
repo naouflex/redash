@@ -2,3 +2,4 @@ build/*.js
 dist
 config/*.js
 client/dist
+app/pages/help/content

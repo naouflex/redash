@@ -1,7 +1,5 @@
 @import (reference, less) "~@/assets/less/ant";
 
-@help-doc-bg: #f7f7f7; // according to https://github.com/getrewatch/website/blob/13daff2d8b570956565f482236f6245042e8477f/src/scss/_components/_variables.scss#L15
-
 .help-trigger {
   font-size: 15px;
 
@@ -13,29 +11,28 @@
 .help-drawer {
   .ant-drawer-body {
     padding: 0;
-    height: 100%; // to allow iframe full dimensions
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
   }
 
   .drawer-wrapper {
     flex: 1;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     width: 100%;
-    justify-content: center;
+    min-height: 0;
   }
 
   .drawer-menu {
-    position: fixed;
+    position: sticky;
     z-index: 1;
-    top: 13px;
-    right: 13px;
+    top: 0;
+    align-self: flex-end;
+    margin: 10px 10px 0 0;
     border-radius: 3px;
-    background: rgba(@help-doc-bg, 0.75); // makes it dissolve over help doc bg
-    border: 2px solid @help-doc-bg;
+    background: var(--rd-color-surface);
+    border: 1px solid var(--rd-color-divider);
     display: flex;
 
     a,
@@ -65,7 +62,6 @@
         font-size: 14px;
       }
 
-      // divider
       &:not(:first-child):before {
         content: "";
         position: absolute;
@@ -78,15 +74,10 @@
     }
   }
 
-  iframe {
-    width: 0;
-    visibility: hidden;
-  }
-
-  iframe.ready {
-    border: 0;
-    width: 100%;
-    height: 100%;
-    visibility: visible;
+  .help-drawer__body {
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+    padding: 0 16px 20px;
   }
 }

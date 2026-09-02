@@ -47,7 +47,7 @@ def _assistant_base_url():
 
 
 def _help_base_url():
-    return (settings.HELP_BASE_URL or "https://naoufel.io").rstrip("/")
+    return _assistant_base_url()
 
 
 def _ensure_assistant_enabled(current_user):

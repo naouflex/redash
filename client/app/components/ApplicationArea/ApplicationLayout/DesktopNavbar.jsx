@@ -3,7 +3,6 @@ import { first, includes } from "lodash";
 import Menu from "antd/lib/menu";
 import Link from "@/components/Link";
 import PlainButton from "@/components/PlainButton";
-import HelpTrigger from "@/components/HelpTrigger";
 import { useCurrentRoute } from "@/components/ApplicationArea/Router";
 import { Auth, clientConfig, currentUser, subscribeToCurrentUser } from "@/services/auth";
 import settingsMenu from "@/services/settingsMenu";
@@ -311,12 +310,7 @@ export default function DesktopNavbar() {
         },
         {
           key: "help",
-          className: "desktop-navbar-profile-menu-item",
-          label: (
-            <HelpTrigger showTooltip={false} type="HOME" tabIndex={0}>
-              Help
-            </HelpTrigger>
-          ),
+          label: <Link href="help">Help</Link>,
         },
         ...(firstSettingsTab
           ? [

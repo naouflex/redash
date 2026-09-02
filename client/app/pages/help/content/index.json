@@ -1,0 +1,536 @@
+{
+  "groups": [
+    {
+      "id": "intro",
+      "title": "Getting Started",
+      "order": 1
+    },
+    {
+      "id": "queries",
+      "title": "Queries",
+      "order": 2
+    },
+    {
+      "id": "dashboards",
+      "title": "Dashboards",
+      "order": 3
+    },
+    {
+      "id": "visualizations",
+      "title": "Visualizations",
+      "order": 4
+    },
+    {
+      "id": "alerts",
+      "title": "Alerts",
+      "order": 5
+    },
+    {
+      "id": "ml",
+      "title": "Machine Learning",
+      "order": 6
+    },
+    {
+      "id": "users",
+      "title": "Users & Auth",
+      "order": 7
+    },
+    {
+      "id": "data-sources",
+      "title": "Data Sources",
+      "order": 8
+    },
+    {
+      "id": "cheat-sheets",
+      "title": "Cheat Sheets",
+      "order": 9
+    },
+    {
+      "id": "admin",
+      "title": "Self-hosting & Admin",
+      "order": 10
+    }
+  ],
+  "topics": [
+    {
+      "path": "/user-guide/getting-started",
+      "title": "Getting Started",
+      "summary": "Connect a data source, write your first query, build a dashboard, and invite your team.",
+      "group": "intro",
+      "order": 1,
+      "file": "user-guide/getting-started.md"
+    },
+    {
+      "path": "/user-guide/quickstart",
+      "title": "Quickstart",
+      "summary": "Three-minute walkthrough: write a query, add a visualization, build a dashboard.",
+      "group": "intro",
+      "order": 2,
+      "file": "user-guide/quickstart.md"
+    },
+    {
+      "path": "/user-guide/querying",
+      "title": "Querying",
+      "summary": "An index of every querying topic - editor, parameters, scheduling, snippets, and exports.",
+      "group": "queries",
+      "order": 1,
+      "file": "user-guide/querying.md"
+    },
+    {
+      "path": "/user-guide/querying/writing-queries",
+      "title": "Creating and Editing Queries",
+      "summary": "Editor shortcuts, schema browser, auto-complete, publishing, archiving and forking.",
+      "group": "queries",
+      "order": 2,
+      "file": "user-guide/querying/writing-queries.md"
+    },
+    {
+      "path": "/user-guide/querying/query-parameters",
+      "title": "Query Parameters",
+      "summary": "Make queries reusable with text, number, date, dropdown and query-based parameters.",
+      "group": "queries",
+      "order": 3,
+      "file": "user-guide/querying/query-parameters.md"
+    },
+    {
+      "path": "/user-guide/querying/query-snippets",
+      "title": "Query Snippets",
+      "summary": "Reusable SQL fragments that auto-complete from the query editor.",
+      "group": "queries",
+      "order": 4,
+      "file": "user-guide/querying/query-snippets.md"
+    },
+    {
+      "path": "/user-guide/querying/scheduling",
+      "title": "Scheduling Queries",
+      "summary": "Run queries automatically to keep dashboards and alerts current.",
+      "group": "queries",
+      "order": 5,
+      "file": "user-guide/querying/scheduling.md"
+    },
+    {
+      "path": "/user-guide/querying/query-filters",
+      "title": "Query Filters",
+      "summary": "In-browser filters powered by ::filter and ::multi-filter column aliases.",
+      "group": "queries",
+      "order": 6,
+      "file": "user-guide/querying/query-filters.md"
+    },
+    {
+      "path": "/user-guide/querying/exporting",
+      "title": "Downloading & Exporting Results",
+      "summary": "Get query results as CSV, TSV, Excel or JSON, manually or via the API.",
+      "group": "queries",
+      "order": 7,
+      "file": "user-guide/querying/exporting.md"
+    },
+    {
+      "path": "/user-guide/querying/favorites-tagging",
+      "title": "Favorites & Tagging",
+      "summary": "Star the things you use the most and tag the rest.",
+      "group": "queries",
+      "order": 8,
+      "file": "user-guide/querying/favorites-tagging.md"
+    },
+    {
+      "path": "/user-guide/querying/query-results-data-source",
+      "title": "Querying Existing Query Results",
+      "summary": "Join data from multiple databases by treating other queries as tables.",
+      "group": "queries",
+      "order": 9,
+      "file": "user-guide/querying/query-results-data-source.md"
+    },
+    {
+      "path": "/user-guide/dashboards",
+      "title": "Creating and Editing Dashboards",
+      "summary": "Combine visualizations and text into a single shareable view.",
+      "group": "dashboards",
+      "order": 1,
+      "file": "user-guide/dashboards.md"
+    },
+    {
+      "path": "/user-guide/dashboards/sharing-dashboards",
+      "title": "Sharing and Embedding Dashboards",
+      "summary": "Publish, share via secret link, and embed dashboards in other tools.",
+      "group": "dashboards",
+      "order": 2,
+      "file": "user-guide/dashboards/sharing-dashboards.md"
+    },
+    {
+      "path": "/user-guide/dashboards/favorites-tagging",
+      "title": "Dashboard Favorites & Tags",
+      "summary": "Quickly find your most-used dashboards.",
+      "group": "dashboards",
+      "order": 3,
+      "file": "user-guide/dashboards/favorites-tagging.md"
+    },
+    {
+      "path": "/user-guide/visualizations/formatting-numbers",
+      "title": "Formatting Numbers in Visualizations",
+      "summary": "Use numeral.js format strings to control how numbers are displayed.",
+      "group": "visualizations",
+      "order": 1,
+      "file": "user-guide/visualizations/formatting-numbers.md"
+    },
+    {
+      "path": "/user-guide/visualizations",
+      "title": "Visualizations Overview",
+      "summary": "Index of every chart type and the configuration playbook.",
+      "group": "visualizations",
+      "order": 1,
+      "file": "user-guide/visualizations.md"
+    },
+    {
+      "path": "/user-guide/visualizations/visualizations-how-to",
+      "title": "Visualizations How-To",
+      "summary": "Create, edit, embed and download chart visualizations.",
+      "group": "visualizations",
+      "order": 2,
+      "file": "user-guide/visualizations/visualizations-how-to.md"
+    },
+    {
+      "path": "/user-guide/visualizations/visualizations-types",
+      "title": "Visualization Types",
+      "summary": "Reference of every visualization type Rewatch supports.",
+      "group": "visualizations",
+      "order": 3,
+      "file": "user-guide/visualizations/visualizations-types.md"
+    },
+    {
+      "path": "/user-guide/visualizations/chart-visualizations",
+      "title": "Chart Visualizations",
+      "summary": "Line, bar, area, pie, scatter, bubble, heatmap and box plots.",
+      "group": "visualizations",
+      "order": 4,
+      "file": "user-guide/visualizations/chart-visualizations.md"
+    },
+    {
+      "path": "/user-guide/visualizations/cohort-visualizations",
+      "title": "Cohort Visualizations",
+      "summary": "Track grouped behaviour over time using cohort charts.",
+      "group": "visualizations",
+      "order": 5,
+      "file": "user-guide/visualizations/cohort-visualizations.md"
+    },
+    {
+      "path": "/user-guide/visualizations/funnel-visualizations",
+      "title": "Funnel Visualizations",
+      "summary": "Two-column step / value visualization for conversion funnels.",
+      "group": "visualizations",
+      "order": 6,
+      "file": "user-guide/visualizations/funnel-visualizations.md"
+    },
+    {
+      "path": "/user-guide/visualizations/pivot-table",
+      "title": "How to Make a Pivot Table",
+      "summary": "Aggregate query results with drag-and-drop instead of SQL.",
+      "group": "visualizations",
+      "order": 7,
+      "file": "user-guide/visualizations/pivot-table.md"
+    },
+    {
+      "path": "/user-guide/visualizations/table-options",
+      "title": "Table Visualization Options",
+      "summary": "Reorder, hide and format columns; render JSON, images and links.",
+      "group": "visualizations",
+      "order": 8,
+      "file": "user-guide/visualizations/table-options.md"
+    },
+    {
+      "path": "/user-guide/alerts",
+      "title": "Alerts",
+      "summary": "Get notified when a query result crosses a threshold you care about.",
+      "group": "alerts",
+      "order": 1,
+      "file": "user-guide/alerts.md"
+    },
+    {
+      "path": "/user-guide/alerts/setting-up-an-alert",
+      "title": "Setting Up an Alert",
+      "summary": "Step-by-step walkthrough of creating your first alert.",
+      "group": "alerts",
+      "order": 2,
+      "file": "user-guide/alerts/setting-up-an-alert.md"
+    },
+    {
+      "path": "/user-guide/alerts/alert-destinations",
+      "title": "Alert Destinations",
+      "summary": "Wire alerts to email, Discord, Twitter, Twitter Private and Telegram.",
+      "group": "alerts",
+      "order": 3,
+      "file": "user-guide/alerts/alert-destinations.md"
+    },
+    {
+      "path": "/user-guide/alerts/custom-alert-notifications",
+      "title": "Customising Alert Notifications",
+      "summary": "Override the default subject and body templates with built-in template variables.",
+      "group": "alerts",
+      "order": 4,
+      "file": "user-guide/alerts/custom-alert-notifications.md"
+    },
+    {
+      "path": "/user-guide/alerts/multiple-column-alert",
+      "title": "Multiple Column Alerts",
+      "summary": "Combine multiple columns into a single boolean trigger value.",
+      "group": "alerts",
+      "order": 5,
+      "file": "user-guide/alerts/multiple-column-alert.md"
+    },
+    {
+      "path": "/user-guide/machine-learning",
+      "title": "Machine Learning Overview",
+      "summary": "End-to-end ML workflow that runs on top of Rewatch query results.",
+      "group": "ml",
+      "order": 1,
+      "file": "user-guide/machine-learning.md"
+    },
+    {
+      "path": "/user-guide/machine-learning/linear-regression",
+      "title": "Linear / Logistic Regression",
+      "summary": "Simple, interpretable models for continuous and categorical targets.",
+      "group": "ml",
+      "order": 2,
+      "file": "user-guide/machine-learning/linear-regression.md"
+    },
+    {
+      "path": "/user-guide/machine-learning/random-forest",
+      "title": "Random Forest",
+      "summary": "Ensemble of decision trees for both regression and classification.",
+      "group": "ml",
+      "order": 3,
+      "file": "user-guide/machine-learning/random-forest.md"
+    },
+    {
+      "path": "/user-guide/machine-learning/ada-boosting",
+      "title": "AdaBoost",
+      "summary": "Adaptive boosting that turns weak learners into a strong one.",
+      "group": "ml",
+      "order": 4,
+      "file": "user-guide/machine-learning/ada-boosting.md"
+    },
+    {
+      "path": "/user-guide/machine-learning/gradient-boosting",
+      "title": "Gradient Boosting",
+      "summary": "Sequential boosting that minimises a loss function step by step.",
+      "group": "ml",
+      "order": 5,
+      "file": "user-guide/machine-learning/gradient-boosting.md"
+    },
+    {
+      "path": "/user-guide/machine-learning/neural-network",
+      "title": "Neural Network (LSTM)",
+      "summary": "LSTM-based deep learning for blockchain time-series.",
+      "group": "ml",
+      "order": 6,
+      "file": "user-guide/machine-learning/neural-network.md"
+    },
+    {
+      "path": "/user-guide/users/authentication-options",
+      "title": "Authentication Options (SSO, Google OAuth, SAML)",
+      "summary": "Built-in password auth, Google OAuth and SAML 2.0 sign-in.",
+      "group": "users",
+      "order": 1,
+      "file": "user-guide/users/authentication-options.md"
+    },
+    {
+      "path": "/user-guide/users/permissions-groups",
+      "title": "Permissions & Groups",
+      "summary": "How group membership and data-source ACLs control what each user can see.",
+      "group": "users",
+      "order": 2,
+      "file": "user-guide/users/permissions-groups.md"
+    },
+    {
+      "path": "/user-guide/users/group-management",
+      "title": "Group Management",
+      "summary": "Create, edit and delete groups; promote admins; disable users.",
+      "group": "users",
+      "order": 3,
+      "file": "user-guide/users/group-management.md"
+    },
+    {
+      "path": "/user-guide/users/inviting-users",
+      "title": "Inviting Users",
+      "summary": "Send invites and add new members to existing groups.",
+      "group": "users",
+      "order": 4,
+      "file": "user-guide/users/inviting-users.md"
+    },
+    {
+      "path": "/user-guide/users/profile-picture",
+      "title": "Profile Pictures",
+      "summary": "Set your avatar via Google or Gravatar.",
+      "group": "users",
+      "order": 5,
+      "file": "user-guide/users/profile-picture.md"
+    },
+    {
+      "path": "/data-sources/amazon-athena-setup",
+      "title": "Amazon Athena",
+      "summary": "Connect to Amazon Athena via an IAM user and S3 staging bucket.",
+      "group": "data-sources",
+      "order": 1,
+      "file": "data-sources/amazon-athena-setup.md"
+    },
+    {
+      "path": "/data-sources/csv-and-excel",
+      "title": "CSV & Excel Files",
+      "summary": "Load CSV / xlsx files from any URL via a small YAML query.",
+      "group": "data-sources",
+      "order": 1,
+      "file": "data-sources/csv-and-excel.md"
+    },
+    {
+      "path": "/data-sources/bigquery-setup",
+      "title": "Google BigQuery",
+      "summary": "Use a service account to connect to BigQuery.",
+      "group": "data-sources",
+      "order": 2,
+      "file": "data-sources/bigquery-setup.md"
+    },
+    {
+      "path": "/data-sources/querying-urls",
+      "title": "JSON / URL Data Sources",
+      "summary": "Query JSON over HTTP using the JSON data source type.",
+      "group": "data-sources",
+      "order": 2,
+      "file": "data-sources/querying-urls.md"
+    },
+    {
+      "path": "/data-sources/python",
+      "title": "Python",
+      "summary": "Run arbitrary Python 3 scripts and surface the result variable.",
+      "group": "data-sources",
+      "order": 3,
+      "file": "data-sources/python.md"
+    },
+    {
+      "path": "/data-sources/evm-chain-logs",
+      "title": "EVM Chain Logs",
+      "summary": "Pull events and function calls from any EVM-compatible chain.",
+      "group": "data-sources",
+      "order": 4,
+      "file": "data-sources/evm-chain-logs.md"
+    },
+    {
+      "path": "/data-sources/mongodb-setup",
+      "title": "MongoDB",
+      "summary": "Connect to MongoDB and run find / aggregate queries as JSON.",
+      "group": "data-sources",
+      "order": 4,
+      "file": "data-sources/mongodb-setup.md"
+    },
+    {
+      "path": "/data-sources/evm-chain-state",
+      "title": "EVM Chain State",
+      "summary": "Read smart contract state across blocks with the EVMState query runner.",
+      "group": "data-sources",
+      "order": 5,
+      "file": "data-sources/evm-chain-state.md"
+    },
+    {
+      "path": "/data-sources/querying-a-google-spreadsheet",
+      "title": "Google Sheets",
+      "summary": "Treat a Google Sheet as a data source via a service account.",
+      "group": "data-sources",
+      "order": 5,
+      "file": "data-sources/querying-a-google-spreadsheet.md"
+    },
+    {
+      "path": "/data-sources/google-analytics-setup",
+      "title": "Google Analytics",
+      "summary": "Connect to Google Analytics via a service account.",
+      "group": "data-sources",
+      "order": 6,
+      "file": "data-sources/google-analytics-setup.md"
+    },
+    {
+      "path": "/data-sources/graphql",
+      "title": "GraphQL",
+      "summary": "Query subgraphs and any GraphQL endpoint, with time-travel support.",
+      "group": "data-sources",
+      "order": 6,
+      "file": "data-sources/graphql.md"
+    },
+    {
+      "path": "/data-sources/axibase-time-series-database",
+      "title": "Axibase Time Series Database",
+      "summary": "Connect to Axibase Time Series Database (ATSD).",
+      "group": "data-sources",
+      "order": 7,
+      "file": "data-sources/axibase-time-series-database.md"
+    },
+    {
+      "path": "/data-sources/dune-api",
+      "title": "Dune API",
+      "summary": "Pull results from Dune queries by ID, with optional parameters.",
+      "group": "data-sources",
+      "order": 7,
+      "file": "data-sources/dune-api.md"
+    },
+    {
+      "path": "/cheat-sheets/snippets",
+      "title": "Snippets Reference",
+      "summary": "Catalogue of named snippets for chain state, events, formatting and Discord.",
+      "group": "cheat-sheets",
+      "order": 1,
+      "file": "cheat-sheets/snippets.md"
+    },
+    {
+      "path": "/open-source/setup",
+      "title": "Self-hosting Setup & Mail Configuration",
+      "summary": "Provisioning a fresh instance with Docker Compose, plus mail / SSO / HTTPS basics.",
+      "group": "admin",
+      "order": 1,
+      "file": "open-source/setup.md"
+    },
+    {
+      "path": "/open-source/admin-guide/usage-data",
+      "title": "Anonymous Usage Data Sharing (Optional)",
+      "summary": "What gets shared when usage stats are enabled, and how to opt out.",
+      "group": "admin",
+      "order": 2,
+      "file": "open-source/admin-guide/usage-data.md"
+    },
+    {
+      "path": "/open-source/dev-setup",
+      "title": "Developer Setup",
+      "summary": "Local Docker dev environment, hot reload and tests.",
+      "group": "admin",
+      "order": 2,
+      "file": "open-source/dev-setup.md"
+    },
+    {
+      "path": "/open-source/redash",
+      "title": "Redash Heritage",
+      "summary": "Rewatch extends Redash. Useful upstream developer references.",
+      "group": "admin",
+      "order": 3,
+      "file": "open-source/redash.md"
+    },
+    {
+      "path": "/open-source/integrations-api",
+      "title": "Integrations & API",
+      "summary": "User and query API keys, Python toolbelt, and the most common endpoints.",
+      "group": "admin",
+      "order": 4,
+      "file": "open-source/integrations-api.md"
+    },
+    {
+      "path": "/open-source/query-runners",
+      "title": "Writing a Query Runner",
+      "summary": "Add a new data source by implementing a Python query runner class.",
+      "group": "admin",
+      "order": 5,
+      "file": "open-source/query-runners.md"
+    },
+    {
+      "path": "/open-source/visualizations-dev",
+      "title": "Adding a Visualization",
+      "summary": "How to write and register a new visualization type.",
+      "group": "admin",
+      "order": 6,
+      "file": "open-source/visualizations-dev.md"
+    }
+  ]
+}
